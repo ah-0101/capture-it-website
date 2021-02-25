@@ -3,28 +3,30 @@ import './arrows.css'
 import './form.css'
 import './fastArrow.css'
 import logo from '../Navigation/logo.png'
+import {Redirect} from 'react-router-dom'
 import {useState} from 'react'
 import { useSelector } from 'react-redux';
 function Photo() {
     const sessionUser = useSelector((state) => state.session.user);
-    const [arrow, setArrow] = useState('none')
-    const [fastArrow, setFastArrow] = useState('none')
+    // const [arrow, setArrow] = useState('none')
+    // const [fastArrow, setFastArrow] = useState('none')
     const [controlPage, setControlPage] = useState('no')
     function handleClick(e) {
         e.preventDefault();
+     
         if(!sessionUser){
-            const hand = setTimeout(()=> {
-                setFastArrow('fastArrow')
+    //         const hand = setTimeout(()=> {
+    //             setFastArrow('fastArrow')
 
-            }, 2000)
-            setTimeout(() => {
+    //         }, 2000)
+    //         setTimeout(() => {
                 
-                setFastArrow('none')
-            }, 3000);
-        setTimeout(() => {
-                setArrow('arrow')
+    //             setFastArrow('none')
+    //         }, 3000);
+    //     setTimeout(() => {
+    //             setArrow('arrow')
                 
-            }, 5000);
+    //         }, 5000);
             setControlPage('controlPage')
         }
 
@@ -33,8 +35,8 @@ function Photo() {
     return (
         <>
         <div onClick={handleClick}> 
-        <img className={arrow} src="https://www.bestanimations.com/Signs&Shapes/Arrows/Right/right-arrow-23.gif"/>
-        <img className={fastArrow} src="https://www.bestanimations.com/Signs&Shapes/Arrows/Right/right-arrow-23.gif"/>
+        {/* <img className={arrow} src="https://www.bestanimations.com/Signs&Shapes/Arrows/Right/right-arrow-23.gif"/>
+        <img className={fastArrow} src="https://www.bestanimations.com/Signs&Shapes/Arrows/Right/right-arrow-23.gif"/> */}
         <h1>Get your next</h1>
         <h1 className='home-decor'>home decor idea</h1>
         <div className={controlPage}>

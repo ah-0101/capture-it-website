@@ -13,7 +13,7 @@ function LoginFormPage() {
   const [errors, setErrors] = useState([]);
 
   if (sessionUser) return (
-    <Redirect to="/home" />
+    <Redirect to="/" />
   );
   
   const handleSubmit = (e) => {
@@ -26,7 +26,7 @@ function LoginFormPage() {
       });
   }
   const handleDemoUser = () => {
-    dispatch(sessionActions.login({ credential:'Demo-lition', password:'password'   }))
+    dispatch(sessionActions.login({ credential:'Demo-lition', password:'password'}))
   }
 
   return (

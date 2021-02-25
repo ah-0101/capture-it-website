@@ -95,6 +95,7 @@ module.exports = (sequelize, DataTypes) => {
             foreignKey: 'userId'
         }
         User.belongsToMany(models.Product, columnMapping);
+        User.hasMany(models.Comment, { foreignKey: 'userId' })
     };
     return User;
 };
