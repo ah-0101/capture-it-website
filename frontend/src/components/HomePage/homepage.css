@@ -1,0 +1,18 @@
+.product-pic {
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 355px;
+    width: 250px;
+    border-radius: 30px;
+    /* padding-bott: 5px; */
+}
+
+.pic-list {
+    padding-left: 20px;
+}
+
+.p-tag {
+    color: black;
+}

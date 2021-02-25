@@ -26,3 +26,61 @@ h1 {
     width: 250px;
     border-radius: 30px;
 }
+
+.arrow {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 1500px;
+    top: 100px;
+    transform: rotate(-90deg);
+    /* display: none; */
+}
+
+.controlPage {
+    /* margin: 16px 0px; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.cp {
+    min-height: 400px;
+    width: 600px;
+    padding: 20px 10px 24px;
+    background-color: rgb(250, 248, 248);
+}
+
+.cp1 {
+    display: block;
+    height: 45px;
+    margin: 5px auto 8px;
+    width: 45px;
+}
+
+.logo2 {
+    width: 50px;
+    height: 50px;
+}
+
+.greetings {
+    font-size: 46px;
+    font-weight: 600;
+    padding-left: 40px;
+    color: rgb(33, 25, 34);
+}
+
+.gr1 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 50px;
+    padding-left: 22px;
+    color: rgb(33, 25, 34);
+}
+
+.decor-img1 {
+    padding-left: 27px;
+    padding-top: 80px;
+}

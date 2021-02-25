@@ -12,13 +12,20 @@ function Navigation({ isLoaded }){
   let sessionLinks;
 
   
-  if (sessionUser) {
+  document.body.addEventListener('click', ()=> {
+
+  })
+
+
+  
+    if (sessionUser) {
     sessionLinks = (
       <ProfileButton user={sessionUser} />
     );
   } else {
     sessionLinks = (
       <>
+
         <NavLink to="/login" className='log'>Log In</NavLink>
         <NavLink to="/signup" className='sign'>Sign Up</NavLink>
       </>
@@ -26,8 +33,8 @@ function Navigation({ isLoaded }){
   }
 
   return (
-    <header>
-      <NavLink exact to="/" className='nav'>
+    <header >
+      <NavLink exact to="/home" className='nav'>
       <img className='logo' src={logo} alt="logo"/>
       </NavLink>
 

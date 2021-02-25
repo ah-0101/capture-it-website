@@ -7,6 +7,8 @@ import SignupFormPage from "./components/SignupFormPage";
 import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
 import Photo from './components/photoStyle'
+import Click from './components/Click'
+import HomePage from './components/HomePage'
 function App() {
   const dispatch = useDispatch();
   const [isLoaded, setIsLoaded] = useState(false);
@@ -14,6 +16,7 @@ function App() {
     dispatch(sessionActions.restoreUser()).then(() => setIsLoaded(true));
   }, [dispatch]);
 
+ 
   return (
     <>
       <Navigation isLoaded={isLoaded} />
@@ -25,7 +28,14 @@ function App() {
           <Route path="/signup">
             <SignupFormPage />
           </Route>
+
+          <Route exact path='/'>
           < Photo />
+          </Route>
+          <Route path='/home'>
+            <HomePage />
+          </Route>
+          <Click />
         </Switch>
       )}
     </>

@@ -89,7 +89,12 @@ module.exports = (sequelize, DataTypes) => {
     };
 
     User.associate = function(models) {
-        // associations can be defined here
+        const columnMapping = {
+            through: 'ProductMakers', // This is the model name referencing the joint table
+            otherKey: 'productId',
+            foreignKey: 'userId'
+        }
+        User.belongsToMany(models.Product, columnMapping);
     };
     return User;
 };

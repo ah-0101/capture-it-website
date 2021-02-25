@@ -18,13 +18,15 @@ header {
     margin-top: 10px;
 }
 
+
+/* 
 p {
     position: absolute;
     padding: 3px;
     float: left;
     margin-left: 3%;
     margin-top: 13px;
-}
+} */
 
 .logo {
     width: 32px;
@@ -43,6 +45,11 @@ p {
 .captureIt {
     font-size: 20px;
     font-weight: 900;
+    position: absolute;
+    padding: 3px;
+    float: left;
+    margin-left: 3%;
+    margin-top: 13px;
 }
 
 ul {
@@ -78,7 +85,6 @@ a:hover {
     width: 100px;
     height: 100px;
     border-radius: 20px;
-    margin-top: -20px;
 }
 
 .sign {

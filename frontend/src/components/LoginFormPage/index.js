@@ -13,7 +13,7 @@ function LoginFormPage() {
   const [errors, setErrors] = useState([]);
 
   if (sessionUser) return (
-    <Redirect to="/" />
+    <Redirect to="/home" />
   );
   
   const handleSubmit = (e) => {
@@ -24,6 +24,9 @@ function LoginFormPage() {
         const data = await res.json();
         if (data && data.errors) setErrors(data.errors);
       });
+  }
+  const handleDemoUser = () => {
+    dispatch(sessionActions.login({ credential:'Demo-lition', password:'password'   }))
   }
 
   return (
@@ -50,6 +53,7 @@ function LoginFormPage() {
         />
       </label>
       <button type="submit">Log In</button>
+      <button type="button" onClick={handleDemoUser}>Sign in as a Guest</button>
     </form>
   );
 }
