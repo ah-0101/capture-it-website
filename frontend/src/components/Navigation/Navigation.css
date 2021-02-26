@@ -5,9 +5,7 @@ html {
 }
 
 header {
-    width: 100%;
-    height: 70px;
-    background-color: rgb(255, 255, 255);
+    background-color: none;
 }
 
 .logo {
@@ -50,6 +48,11 @@ p {
     float: left;
     margin-left: 3%;
     margin-top: 13px;
+    color: whitesmoke;
+}
+
+.classes-it {
+    color: chartreuse;
 }
 
 ul {
@@ -73,14 +76,13 @@ li {
 }
 
 a:hover {
-    color: #ebbf2e;
+    color: chartreuse;
     transition: 0.5s;
 }
 
 .sign,
 .log {
     text-decoration: none;
-    background-color: #e60023;
     color: #fff;
     width: 100px;
     height: 100px;
@@ -89,6 +91,5 @@ a:hover {
 
 .sign {
     margin-left: 18px;
-    background: #efefef;
-    color: black;
+    color: chartreuse;
 }

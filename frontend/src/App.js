@@ -9,6 +9,7 @@ import Navigation from "./components/Navigation";
 import Photo from './components/photoStyle'
 import Click from './components/Click'
 import HomePage from './components/HomePage'
+import Nature from "./components/Nature/Nature";
 function App() {
   const dispatch = useDispatch();
   const [isLoaded, setIsLoaded] = useState(false);
@@ -34,7 +35,6 @@ function App() {
           <Route path='/home'>
             <HomePage />
           </Route>
-          <Click />
         </Switch>
       )}
     </>

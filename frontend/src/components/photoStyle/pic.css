@@ -1,86 +1,96 @@
-html,
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    text-align: center;
-    color: rgb(33, 25, 34);
-    font-size: 65px;
-    font-weight: 600;
-}
-
-.home-decor {
-    color: rgb(97, 140, 123);
-    margin-top: -50px;
-}
-
-.main-img {
-    background-color: transparent;
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    height: 355px;
-    width: 250px;
-    border-radius: 30px;
-}
-
-.arrow {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    left: 1500px;
-    top: 100px;
-    transform: rotate(-90deg);
-    /* display: none; */
-}
-
-.controlPage {
-    /* margin: 16px 0px; */
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.cp {
-    min-height: 400px;
-    width: 600px;
-    padding: 20px 10px 24px;
-    background-color: rgb(250, 248, 248);
-}
-
-.cp1 {
-    display: block;
-    height: 45px;
-    margin: 5px auto 8px;
-    width: 45px;
-}
-
-.logo2 {
-    width: 50px;
-    height: 50px;
-}
-
-.greetings {
-    font-size: 46px;
-    font-weight: 600;
-    padding-left: 40px;
-    color: rgb(33, 25, 34);
-}
-
-.gr1 {
-    font-size: 20px;
-    font-weight: 600;
-    padding-top: 50px;
-    padding-left: 22px;
-    color: rgb(33, 25, 34);
-}
-
-.decor-img1 {
-    padding-left: 27px;
-    padding-top: 80px;
-}
+ html,
+ body {
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+     margin: 0;
+     padding: 0;
+     font-size: 20px;
+ }
+ 
+ h1 {
+     text-align: center;
+     color: rgb(33, 25, 34);
+     font-size: 65px;
+     font-weight: 600;
+ }
+ 
+ .home-decor {
+     color: rgb(97, 140, 123);
+     margin-top: -50px;
+ }
+ 
+ .main-img {
+     background-color: transparent;
+     background-size: cover;
+     background-position: 50%;
+     background-repeat: no-repeat;
+     height: 355px;
+     width: 250px;
+     border-radius: 30px;
+ }
+ 
+ .controlPage {
+     position: relative;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .cp {
+     min-height: 400px;
+     width: 600px;
+     padding: 20px 10px 24px;
+     background-color: rgb(250, 248, 248);
+ }
+ 
+ .cp1 {
+     display: block;
+     height: 45px;
+     margin: 5px auto 8px;
+     width: 45px;
+ }
+ 
+ .logo2 {
+     width: 50px;
+     height: 50px;
+ }
+ 
+ .greetings {
+     font-size: 46px;
+     font-weight: 600;
+     padding-left: 40px;
+     color: rgb(33, 25, 34);
+ }
+ 
+ .gr1 {
+     font-size: 20px;
+     font-weight: 600;
+     padding-top: 50px;
+     padding-left: 22px;
+     color: rgb(33, 25, 34);
+ }
+ 
+ .decor-img1 {
+     padding-left: 27px;
+     padding-top: 80px;
+ }
+ 
+ .home {
+     background-image: url("./nat.jpg");
+ }
+ 
+ .nature {
+     color: chartreuse;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+     font-weight: 900;
+ }
+ 
+ .welcome-page {
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+     font-weight: 900;
+     color: whitesmoke;
+ }
+ 
+ .second-root {
+     display: flex;
+     justify-content: "center";
+     align-items: center;
+ }
