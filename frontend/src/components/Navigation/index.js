@@ -8,13 +8,9 @@ import { Redirect } from 'react-router-dom';
 import './Navigation.css';
 import logo from './logo.png'
 
-const useStyles = makeStyles(theme => ({
-
-}))
 
 
 function Navigation({ isLoaded }){
-  useStyles()
   const sessionUser = useSelector(state => state.session.user);
 
   let sessionLinks;

@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
 import * as sessionActions from "../../store/session";
 
+
 function SignupFormPage() {
   const dispatch = useDispatch();
   const sessionUser = useSelector((state) => state.session.user);
@@ -70,7 +71,9 @@ function SignupFormPage() {
         />
       </label>
       <button type="submit">Sign Up</button>
+
     </form>
+
   );
 }
 

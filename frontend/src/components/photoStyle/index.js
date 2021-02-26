@@ -9,13 +9,18 @@ import {Redirect} from 'react-router-dom'
 import {useState, useEffect} from 'react'
 import { useSelector } from 'react-redux';
 import { Collapse, CssBaseline, IconButton } from '@material-ui/core'
-import Nature from '../Nature/Nature.js'
-import Click from '../Click'
+import Nature from '../Nature'
+import Nature2 from '../Nature2'
+import Nature3 from '../Nature3'
+import Animals from '../Animals'
+import { Link as Scroll, scrollSpy, scroller } from 'react-scroll'
+ 
 const useStyles = makeStyles(theme => ({
   root:{
       minHeight: '180vh',
       backgroundRepeat:"no-repeat",
-       backgroundSize: 'cover' 
+       backgroundSize: 'cover',
+        
   
   },
   roots:{
@@ -47,21 +52,8 @@ function Photo() {
         e.preventDefault();
      
         if(!sessionUser){
-    //         const hand = setTimeout(()=> {
-    //             setFastArrow('fastArrow')
-
-    //         }, 2000)
-    //         setTimeout(() => {
-                
-    //             setFastArrow('none')
-    //         }, 3000);
-    //     setTimeout(() => {
-    //             setArrow('arrow')
-                
-    //         }, 5000);
             setControlPage('controlPage')
         }
-
       }
     
     return (
@@ -78,16 +70,27 @@ function Photo() {
                 <span className='nature'>Nature </span>
                 life 
         </h1>
+
+        <Scroll to="bottom-page" smooth={true}>
         <IconButton>
             <ArrowDropDownIcon className={css.arrow1}/>
         </IconButton>
+        </Scroll>
         </Collapse>
 
         </div>
  
         </div>
-        <Click />
-       
+
+        <div className='navigation' id="bottom-page">
+
+        <Nature />
+        <Nature2 />
+        <Nature3 />
+        <Animals />
+        </div>
+
+
         </div>
 
     

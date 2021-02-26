@@ -12,5 +12,13 @@ router.get('/', asyncHandler(async function(req, res) {
 // router.get('/', asyncHandler(async function(req,res){
 //     const 
 // }))
+// router.get('/product', asyncHandler(async function(req, res) {
+//     const product = await Product.findAll({
+//         include: [{
+//             include: [User]
+//         }]
+//     })
+//     console.log("product route", product)
+// }))
 
 module.exports = router;
