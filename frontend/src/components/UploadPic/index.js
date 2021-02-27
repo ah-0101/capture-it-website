@@ -3,6 +3,7 @@ import React from 'react';
 import {useState} from 'react'
 import {useEffect} from 'react'
 import { useSelector } from 'react-redux';
+import LoadingIcon from '../LoadingIcon';
 import './upload.css'
 export default function UploadPic(){
     const sessionUser = useSelector((state) => state.session.user);
@@ -38,6 +39,7 @@ export default function UploadPic(){
               <div className='general'>
                   {error2 && <div className='error'>{error2}</div>}
                   {file && <div>{file.name}</div>}
+                  {file && <LoadingIcon file={file} setFile={setFile}/>}
               </div>
         </form>
     )
