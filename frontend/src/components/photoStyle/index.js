@@ -42,19 +42,11 @@ function Photo() {
     const css = useStyles();
     const [checked, setChecked] = useState(false);
     const sessionUser = useSelector((state) => state.session.user);
-    // const [arrow, setArrow] = useState('none')
-    // const [fastArrow, setFastArrow] = useState('none')
     const [controlPage, setControlPage] = useState('no')
     useEffect(() => {
         setChecked(true)
     }, [])
-    function handleClick(e) {
-        e.preventDefault();
-     
-        if(!sessionUser){
-            setControlPage('controlPage')
-        }
-      }
+ 
     
     return (
         
@@ -70,7 +62,6 @@ function Photo() {
                 <span className='nature'>Nature </span>
                 life 
         </h1>
-
         <Scroll to="bottom-page" smooth={true}>
         <IconButton>
             <ArrowDropDownIcon className={css.arrow1}/>

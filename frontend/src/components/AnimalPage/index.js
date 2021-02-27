@@ -1,22 +1,19 @@
 import {useState} from 'react'
 import {useEffect} from 'react-router-dom'
 import { useSelector } from 'react-redux';
+import UploadPic from '../UploadPic'
+import { FileInput, SVGIcon } from 'react-md';
 import './animal.css'
 export default function (){
     const sessionUser = useSelector((state) => state.session.user);
     const [controlPage, setControlPage] = useState('no')
-    function handleClick(e) {
-        e.preventDefault();
-     
-        if(!sessionUser){
-            setControlPage('controlPage')
-        }
-      }
+ 
     return(
-      
-    <div className='ss' onClick={handleClick}>  
         
+        <div className='ss'>  
+
         <div className='s'>
+            <UploadPic />
         <img className='main-img' src="https://i.pinimg.com/236x/f1/13/df/f113df475d4566caa0075c6729960fa3.jpg" alt=""/>
         <img className='main-img' src="https://i.pinimg.com/550x/a7/87/20/a78720c39a39ac50a2856420d636d113.jpg" alt=""/>        
         <img className='main-img' src="https://i.pinimg.com/236x/f4/dc/58/f4dc58f3bddf1c5b5249511820246df8.jpg" alt=""/>        
