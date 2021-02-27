@@ -34,12 +34,12 @@ function Navigation({ isLoaded }){
   return (
     <>
     <header >
-      <NavLink exact to="/home" className='nav'>
       {/* <img className='logo' src={logo} alt="logo"/> */}
-      </NavLink>
 
 
+      <NavLink exact to="/home" className='nav'>
       <p className='captureIt'>Capture<span className="classes-it">It</span></p>
+      </NavLink>
     <ul>
       <li className='logo-nav' >
         

@@ -1,15 +1,16 @@
 .img-main {
-    margin: 20px auto;
+    margin: 40px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
+    grid-gap: 50px;
 }
 
 .img-wrap {
     overflow: hidden;
-    height: 0;
+    height: 340;
+    width: 300;
+    border-radius: 30px;
     padding: 50% 0;
-    /* padding controls height, will always be perfectly square regardless of width */
     position: relative;
     opacity: 0.8;
 }

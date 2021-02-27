@@ -1,10 +1,10 @@
-.s {
-    /* display: flex; */
-    /* align-items: center; */
-    padding-top: 40vh;
-    padding-left: 30vh;
+.main-1 {
+    background: url()
 }
 
-.ss {
-    /* background-image: url('./download.jpg'); */
+.s {
+    padding-top: 140px;
+    padding-left: 250px;
+    /* padding-right: 20px; */
+    width: 1200px;
 }
